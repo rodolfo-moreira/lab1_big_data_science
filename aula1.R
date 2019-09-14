@@ -54,10 +54,10 @@ sd(a3$price)
 # Histograma
 hist(d$price)
 
-#visualização de 4 gráficos
+# visualização de 4 gráficos
 par(mfrow=c(2,2))
 
-#comparativo lado a lado
+# comparativo lado a lado
 hist(d$price)
 hist(a1$price)
 hist(a2$price)
@@ -67,6 +67,26 @@ hist(a3$price)
 # Descrição de uma amostra
 summary(d)
 summary(a3)
+
+
+par(mfrow=c(1,1))
+
+# Boxplot
+boxplot(d$price)
+boxplot(d$price~d$cut)
+boxplot(d$price~d$color)
+
+# Gráfico de dispersão scaterplot
+m <- mtcars
+
+plot(m$mpg~m$wt)
+
+# Coeficiente de correlação linear
+# (pearson) | Pesquisar por correlation packages
+# Verificar qual as variaveis para separar para realizar uma causa
+cor(m$mpg, m$wt)
+cor(m)
+
 
 
 
