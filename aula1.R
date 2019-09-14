@@ -87,7 +87,11 @@ plot(m$mpg~m$wt)
 cor(m$mpg, m$wt)
 cor(m)
 
-
+#Exercício
+install.packages("swirl")
+library(swirl)
+#apaga na memoria todas as variaveis rm(list=ls())
+swirl()
 
 
 
